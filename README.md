@@ -14,6 +14,8 @@ I build data, statistics, and AI systems with an emphasis on **reproducibility, 
 
 ## Research and reproducibility
 
+- [REA-Bench](https://github.com/Jackxiaozhiren/rea-bench) — auditable benchmark and FDR-controlled claim verifier for reverse-engineering agents. The current public report is explicit that the M3 cohort is captured but the stochastic layer-2 adjustment is still pending.
+- [DeepInfer research audit](https://github.com/Jackxiaozhiren/deepinfer-research) — independent CPU-only simulation study of published speculative-decoding speedup claims; it is not presented as a production hardware benchmark.
 - [PISA 2022 XAI & mathematics](https://github.com/Jackxiaozhiren/pisa2022-xai-math) — design-aware model verification with plausible values, Fay-BRR uncertainty, fairness and calibration checks.
 - [Bayesian TSK spike-and-slab](https://github.com/Jackxiaozhiren/tsk-spikeslab) — model averaging, posterior predictive uncertainty, diagnostics, and reproducibility materials.
 - [Tabular-to-image encoding](https://github.com/Jackxiaozhiren/tabular-image-encoding-dissection) — controlled comparison of encoding decisions across tabular datasets.
