@@ -1,32 +1,37 @@
-# Applied statistics · Verifiable data science · Reliable AI
+# Applied statistics · Reproducible data science · Reliable AI
 
-I build data, statistics, and AI systems with an emphasis on **reproducibility, measurable quality, and evidence-backed results**. My work spans data quality, autonomous analysis, interactive applications, and quantitative research.
+I work on **statistical modeling, empirical validation, and data-centric machine learning**. My projects emphasize careful experimental design, uncertainty, reproducible code, and clear limits on what the evidence shows.
 
-## Selected software projects
+## Selected research projects
 
-| Project | Focus |
+These links lead to **research software and supporting evidence**, not a list of peer-reviewed journal publications. The README of each repository explains its data, methods, frozen results, and reproducibility limitations.
+
+| Research project | What the code and evidence demonstrate |
 | --- | --- |
-| [DataSentry](https://github.com/Jackxiaozhiren/datasentry) | Local-first data quality: inspect statistical evidence, detect drift, and review repairs before applying them. |
-| [Data Science Agent](https://github.com/Jackxiaozhiren/data-science-agent) | Reproducible data analysis across SQL, statistics, machine learning, and visualization, with evidence for generated claims. |
-| [Interve-AI](https://github.com/Jackxiaozhiren/Interve-AI) | Multimodal AI interview **practice** and feedback platform; not a hiring-screening tool. |
-| [QuantRisk++](https://github.com/Jackxiaozhiren/quantrisk-plus-plus) | C++/Python quantitative finance engine with numerical reference tests and reproducible risk/Monte Carlo experiments. |
-| [MotionSites](https://github.com/Jackxiaozhiren/MotionSites) | Gallery of 30 motion-driven frontend experiments and live demos. |
+| **[PISA 2022: model verification and evaluation](https://github.com/Jackxiaozhiren/pisa2022-xai-math)** | Statistical validation using PISA mathematics plausible values, survey weights, Fay–BRR uncertainty, calibration diagnostics, a matched EBM comparison, and unseen-school evaluation. Raw OECD data must be obtained from its original source. |
+| **[Biomedical knowledge-graph reliability](https://github.com/Jackxiaozhiren/jbi-biomedical-reliability-screen)** | A conditional reliability screen for biomedical link predictions, with a frozen protocol, derived statistics, and external-data/time-sliced validation. It does **not** establish clinical effectiveness or causal benefit. |
+| **[Bayesian TSK regression and uncertainty](https://github.com/Jackxiaozhiren/tsk-spikeslab)** | Corrected Bayesian spike-and-slab model averaging, posterior-predictive uncertainty, numerical diagnostics, and tests. The evaluated method is **not** claimed to beat strong dense-TSK and GP baselines. |
+| **[Tabular-to-image encoding experiments](https://github.com/Jackxiaozhiren/tabular-image-encoding-dissection)** | A controlled comparison across 15 public tabular datasets, exploring categorical features, image encoding, architecture, feature ordering, and conventional tabular baselines. Results are protocol-specific. |
 
-## Research and reproducibility
+**Publication boundary:** GitHub repositories, software version tags, continuous-integration checks, and software/dataset DOIs do not indicate that an associated manuscript has been accepted or peer reviewed. Historical journal submissions, where mentioned in a project, are distinct from published papers.
 
-- [PISA 2022 XAI & mathematics](https://github.com/Jackxiaozhiren/pisa2022-xai-math) — design-aware model verification with plausible values, Fay-BRR uncertainty, fairness and calibration checks.
-- [Bayesian TSK spike-and-slab](https://github.com/Jackxiaozhiren/tsk-spikeslab) — model averaging, posterior predictive uncertainty, diagnostics, and reproducibility materials.
-- [Tabular-to-image encoding](https://github.com/Jackxiaozhiren/tabular-image-encoding-dissection) — controlled comparison of encoding decisions across tabular datasets.
-- [Biomedical KG reliability](https://github.com/Jackxiaozhiren/jbi-biomedical-reliability-screen) — study-specific verification protocol and frozen evidence artifacts.
+## Selected engineering work
 
-These repositories document research methods, inputs, limitations, and verification steps. Please check each project's README and data-use terms before reproducing or citing a result.
+| Software project | What it demonstrates |
+| --- | --- |
+| [DataSentry](https://github.com/Jackxiaozhiren/datasentry) | Local-first data-quality detection with evidence-based diagnostics and a reversible propose → preview → repair → verify workflow. |
+| [Data Science Agent](https://github.com/Jackxiaozhiren/data-science-agent) | SQL/statistical analysis and machine-learning workflows with traceable evidence behind generated claims. |
+| [QuantRisk++](https://github.com/Jackxiaozhiren/quantrisk-plus-plus) | C++/Python quantitative finance implementations with numerical reference checks and reproducible risk simulations. |
+
+Additional software projects: [Interve-AI](https://github.com/Jackxiaozhiren/Interve-AI) (interview practice and feedback) · [MotionSites](https://github.com/Jackxiaozhiren/MotionSites) (motion-driven frontend experiments).
+
+## Research and engineering approach
+
+- **Define the estimand or question first:** distinguish a demonstrated metric, an interpretation, and a real-world claim.
+- **Compare against alternatives:** use baselines, ablations, sensitivity checks, and acknowledge meaningful negative findings.
+- **Make results inspectable:** publish permitted code, test cases, frozen summaries, data-source instructions, and known reproducibility limits.
+- **Report scope accurately:** CI success tests software behavior; it does not prove general theorems, study novelty, or journal acceptance.
 
 ## Open-source collaboration
 
-I contribute to projects maintained by the wider open-source community. For example, my [upstream pull request #12213](https://github.com/punkpeye/awesome-mcp-servers/pull/12213) proposes listing the DataSentry MCP server in [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers). **That directory is an upstream community project, not one of my original software projects.** The PR remains open until its maintainers merge it.
-
-## How I work
-
-- Statistical evidence first; AI assistance with explicit checks and human review where needed.
-- Deterministic tests, locked dependencies, and CI that fails when an expected artifact or result is missing.
-- Clear separation between demonstrated results, hypotheses, and limitations.
+I also contribute to community-maintained projects. For example, [upstream PR #12213](https://github.com/punkpeye/awesome-mcp-servers/pull/12213) is a proposed listing of the DataSentry MCP integration in a third-party community directory, **not** a project I maintain.
